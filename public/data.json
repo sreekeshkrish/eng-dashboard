@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-01-21T08:30:41.955Z",
+  "generatedAt": "2026-01-21T08:39:02.547Z",
   "summary": {
     "completed24h": 6,
     "readyForRelease": 1,
@@ -1161,26 +1161,31 @@
     {
       "priority": "critical",
       "item": "ENG-619",
+      "title": "P1 | Duplicate Release Visit Created",
       "action": "Ready for release — push to prod"
     },
     {
       "priority": "warning",
       "item": "ENG-339",
+      "title": "AGVS Phase 1",
       "action": "Overdue since 2025-12-27"
     },
     {
       "priority": "warning",
       "item": "ENG-161",
+      "title": "P1 - Appointment Details Not Updated for Lead in DB",
       "action": "Overdue since 2026-01-21"
     },
     {
       "priority": "warning",
       "item": "ENG-105",
+      "title": "Caratmeter API integration",
       "action": "Overdue since 2025-12-27"
     },
     {
       "priority": "critical",
       "item": "ENG-161",
+      "title": "P1 - Appointment Details Not Updated for Lead in DB",
       "action": "Due today"
     }
   ]
