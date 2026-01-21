@@ -1,240 +1,1187 @@
 {
-  "generatedAt": "2026-01-21T08:00:00.000Z",
+  "generatedAt": "2026-01-21T08:30:41.955Z",
   "summary": {
-    "completed24h": 3,
+    "completed24h": 6,
     "readyForRelease": 1,
     "readyForQA": 1,
-    "inDevelopment": 8,
-    "readyForDev": 8,
+    "inDevelopment": 11,
+    "readyForDev": 51,
     "blockers": 0
   },
   "completed": [
     {
+      "id": "ENG-660",
+      "title": "Loan ID: OMGL10629484 | TPF Payment status",
+      "assignee": "adityasinh.jc@orocorp.in",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-660/loan-id-omgl10629484-or-tpf-payment-status",
+      "priority": null,
+      "subIssues": []
+    },
+    {
+      "id": "ENG-658",
+      "title": "Loan ID: OMGL50668979 | Update Fed closure value",
+      "assignee": "Shubham B",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-658/loan-id-omgl50668979-or-update-fed-closure-value",
+      "priority": null,
+      "subIssues": []
+    },
+    {
       "id": "ENG-654",
-      "title": "PL Split not reflecting (OMGL10769044)",
-      "assignee": "Harsh",
-      "labels": ["bug", "hotfix", "severity-p0"],
-      "url": "https://linear.app/orocorp/issue/ENG-654"
+      "title": "Loan ID: OMGL10769044 | PL Split is not getting reflected",
+      "assignee": "harsh.m@orocorp.in",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-654/loan-id-omgl10769044-or-pl-split-is-not-getting-reflected",
+      "priority": null,
+      "subIssues": []
     },
     {
       "id": "ENG-653",
-      "title": "Payment status wrong (OMGL50751277)",
-      "assignee": "Harsh",
-      "labels": ["bug", "hotfix", "severity-p0"],
-      "url": "https://linear.app/orocorp/issue/ENG-653"
+      "title": "Loan ID: OMGL50751277 | Payment status wrong",
+      "assignee": "harsh.m@orocorp.in",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-653/loan-id-omgl50751277-or-payment-status-wrong",
+      "priority": null,
+      "subIssues": []
+    },
+    {
+      "id": "ENG-652",
+      "title": "Loan ID: OMGL10698023 | TPF Ledger adjustment",
+      "assignee": "harsh.m@orocorp.in",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-652/loan-id-omgl10698023-or-tpf-ledger-adjustment",
+      "priority": null,
+      "subIssues": []
     },
     {
       "id": "ENG-624",
-      "title": "BRL_GL_COL entry missing (OMBL90960439)",
-      "assignee": "Harsh",
-      "labels": ["bug", "hotfix", "severity-p0"],
-      "url": "https://linear.app/orocorp/issue/ENG-624"
+      "title": "Loan ID: OMBL90960439 | BRL_GL_COL entry missing",
+      "assignee": "harsh.m@orocorp.in",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-624/loan-id-ombl90960439-or-brl-gl-col-entry-missing",
+      "priority": null,
+      "subIssues": []
     }
   ],
   "readyForRelease": [
     {
       "id": "ENG-619",
-      "title": "Duplicate Release Visit fix (Redis locking)",
-      "assignee": "Kushal",
-      "labels": ["bug", "hotfix", "severity-p0"],
-      "url": "https://linear.app/orocorp/issue/ENG-619",
+      "title": "P1 | Duplicate Release Visit Created",
+      "assignee": "kushal.ps@orocorp.in",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-619/p1-or-duplicate-release-visit-created",
+      "priority": "Medium",
       "dueDate": "2026-01-20",
-      "description": "Redis-based locking to prevent concurrent duplicate inserts in visits table."
+      "description": "**Issue**\nMultiple concurrent requests were processed simultaneously by the system, which resulted in duplicate entries being created in the database.\n\n**Root Cause**\nThe `visits` table does not have ",
+      "subIssues": []
     }
   ],
   "readyForQA": [
     {
       "id": "ENG-656",
-      "title": "Cx app profile update & localisation",
-      "assignee": "Aniket",
-      "labels": ["mobile", "this-week"],
-      "url": "https://linear.app/orocorp/issue/ENG-656"
+      "title": "Cx app profile update & Localisation",
+      "assignee": "Aniket Singh",
+      "labels": [
+        "mobile",
+        "this-week"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-656/cx-app-profile-update-and-localisation",
+      "priority": null,
+      "dueDate": null,
+      "description": "Figma link: [https://www.figma.com/design/wuDQvt5JFY2HrVWJfjxDpP/Jan-Feb-2026?node-id=1467-41238&t=vIhIdTqWwcy90vuS-11](<https://www.figma.com/design/wuDQvt5JFY2HrVWJfjxDpP/Jan-Feb-2026?node-id=1467-4",
+      "subIssues": []
     }
   ],
   "readyForDev": [
     {
-      "id": "ENG-655",
-      "title": "Federal Bank logo update",
-      "assignee": "Girish",
-      "priority": "Urgent",
-      "labels": ["hotfix", "severity-p0"],
-      "url": "https://linear.app/orocorp/issue/ENG-655"
+      "id": "ENG-661",
+      "title": "Loan ID: OMGL10601832 | Auto Renewal Reject case",
+      "assignee": "Shubham B",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-661/loan-id-omgl10601832-or-auto-renewal-reject-case",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMGL10601832\n\nWhat is the issue:\nAuto renewal case rejected by bank. We need to move this loan back to GL and PL active status and update ledger and closure so that cx can proceed with auto r",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-659",
+      "title": "Loan ID: OMGL10636359 | TPF Payment status",
+      "assignee": "adityasinh.jc@orocorp.in",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-659/loan-id-omgl10636359-or-tpf-payment-status",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMGL10636359\n\nWhat is the issue:\n\n(TPF)\nLoan amount: rs 1,46,223\nPending interest: 434\nClosure: rs 1,46,650\nCx made payment rs 11280 on 14 Jan  which was received but reflecting as failed on ",
+      "subIssues": []
     },
     {
       "id": "ENG-657",
-      "title": "Add 'Business' to Loan Purpose enum",
-      "assignee": "Girish",
-      "priority": "P0",
-      "labels": ["bug", "hotfix", "severity-p0"],
-      "url": "https://linear.app/orocorp/issue/ENG-657"
+      "title": "P0 | Add 'Business' as option in Loan Purpose enum",
+      "assignee": "Girish Baranda",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-657/p0-or-add-business-as-option-in-loan-purpose-enum",
+      "priority": null,
+      "dueDate": null,
+      "description": "What is the issue: Add 'Business' as option in Loan Purpose enum\n\nWhat was the fix done:",
+      "subIssues": []
     },
     {
-      "id": "ENG-652",
-      "title": "TPF Ledger adjustment (OMGL10698023)",
-      "assignee": "Harsh",
-      "priority": "P0",
-      "labels": ["bug", "hotfix", "severity-p0"],
-      "url": "https://linear.app/orocorp/issue/ENG-652"
+      "id": "ENG-655",
+      "title": "Update Federal Bank logo to the latest logo",
+      "assignee": "Girish Baranda",
+      "labels": [
+        "hotfix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-655/update-federal-bank-logo-to-the-latest-logo",
+      "priority": "Urgent",
+      "dueDate": null,
+      "description": "Federal bank has recently updated their logo and wants it to be changed on our platforms\n\n1. Pledge Card\n2. Oromoney Website\n3. Customer App - homepage, plans listing, manage loan - lender details, wh",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-650",
+      "title": "Loan ID: OMGL40681641 | Auto Renewal Rejected",
+      "assignee": "vagheshkumar.sp@orocorp.in",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-650/loan-id-omgl40681641-or-auto-renewal-rejected",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMGL40681641\n\nWhat is the issue:\n\nAuto renewal rejected by us due to esign not done. Manual renewal has been done. Please adjust ledger based on the sheet shared and move the same to GL and P",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-634",
+      "title": "Caller's name not popping up for Sales Visits raised through Quali",
+      "assignee": "Unassigned",
+      "labels": [
+        "bug",
+        "backend",
+        "quick_release_3"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-634/callers-name-not-popping-up-for-sales-visits-raised-through-quali",
+      "priority": "High",
+      "dueDate": null,
+      "description": "Labels:\n`bug, <backend|web|mobile>, severity-p0|p1|p2|p3 + hotfix (if production)`\n\n## **Summary**\n\n* Short description of the broken behaviour: While creating a sales visit through quali and choosing",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-632",
+      "title": "Loan ID: OMGL20697790 | Incorrect Renewal Plan Amount",
+      "assignee": "Shubham B",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-632/loan-id-omgl20697790-or-incorrect-renewal-plan-amount",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMGL20697790\n\nSlack chat: [https://oro-work.slack.com/archives/C036NPDTGGN/p1768540290607129](https://oro-work.slack.com/archives/C036NPDTGGN/p1768540290607129)\n\nWhat is the issue: Plans Show",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-603",
+      "title": "P1 | Update Tertiary Contact details for safe",
+      "assignee": "navjot.k@orocorp.in",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-603/p1-or-update-tertiary-contact-details-for-safe",
+      "priority": null,
+      "dueDate": null,
+      "description": "What is the issue:\n\need to add Tertiary user for the Existing locker mentioned in the screenshot  [@Navjot Kumar](https://oro-work.slack.com/team/U035SNYFAQM)\nTertiary User Name  - Ahmed Irfaad\nmobile",
+      "subIssues": []
     },
     {
       "id": "ENG-602",
-      "title": "Loan not booked, adjust recovery",
-      "assignee": "Harsh",
-      "priority": "P0",
-      "labels": ["bug", "hotfix", "severity-p0"],
-      "url": "https://linear.app/orocorp/issue/ENG-602"
+      "title": "Loan ID: OMGL10805699 | Loan not booked and need to adjust recovery",
+      "assignee": "harsh.m@orocorp.in",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-602/loan-id-omgl10805699-or-loan-not-booked-and-need-to-adjust-recovery",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMGL10805699\n\nWhat is the issue:\n\nLoan not booked by bank due to name mismatch. Disbursed amount recovered through rebooking. Please update ledger and move the loan to loan closed status. \nLe",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-593",
+      "title": "P0 | Clear Redis cache for manually updated loan",
+      "assignee": "Shubham B",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-593/p0-or-clear-redis-cache-for-manually-updated-loan",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: **OMGL40617431**\n\nWhat is the issue:\n\nRedis cache wasn't cleared, generally it happens when manually loan values are changed\n\nSlack Link: [https://oro-work.slack.com/archives/C036NPDTGGN/p176",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-590",
+      "title": "P0 | Report Issue",
+      "assignee": "Girish Baranda",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-590/p0-or-report-issue",
+      "priority": null,
+      "dueDate": null,
+      "description": "What is the issue:\n\nCan someone explain what has happened with these loans? accrual and collection has a mismatch?\n\nSlack Link: [https://oro-work.slack.com/archives/C036NPDTGGN/p1767944088900149](http",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-588",
+      "title": "[Severity-P0] Tenmark Reports Correction",
+      "assignee": "kushal.ps@orocorp.in",
+      "labels": [
+        "bug",
+        "backend",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-588/severity-p0-tenmark-reports-correction",
+      "priority": "Urgent",
+      "dueDate": null,
+      "description": "## **Summary**\n\n* Inaccurate fields across following reports needs to be corrected:\n  * Collection\n  * Charges\n  * AUM/Interest Accrual\n\n## **Steps To Reproduce**\n\n* Generate report via Tenmark Core d",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-587",
+      "title": "LoanID: OMV100100100 | Loan Status : Testing this out",
+      "assignee": "Unassigned",
+      "labels": [],
+      "url": "https://linear.app/orocorp/issue/ENG-587/loanid-omv100100100-or-loan-status-testing-this-out",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan status not updated",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-572",
+      "title": "Loan ID: OMGL50701091 | Cx payment is getting failed",
+      "assignee": "Sachin Kumar",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-572/loan-id-omgl50701091-or-cx-payment-is-getting-failed",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMGL50701091\n\nWhat is the issue: Cx payment is getting failed due to razorpay issue\n\nSlack Link: [https://oro-work.slack.com/archives/C036NPDTGGN/p1767847312527819](https://oro-work.slack.com",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-563",
+      "title": "P0 | Mark the payment as failed for incorrect entries in October month",
+      "assignee": "Girish Baranda",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-563/p0-or-mark-the-payment-as-failed-for-incorrect-entries-in-october",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID:\n\nOMGL30634935\nOMGL20632341\nOMGL30577736\nOMGL20693585\nOMGL30707102\nOMGL30525465\nOMGL10619713\nOMGL30707312\nOMGL10600645\nOMGL30549854\nOMGL30510782\nOMGL40579146\nOMGL10704586\nOMGL50653708\nOMGL2071",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-562",
+      "title": "P1 | Mark manually closed loan as inactive in ledger",
+      "assignee": "adityasinh.jc@orocorp.in",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-562/p1-or-mark-manually-closed-loan-as-inactive-in-ledger",
+      "priority": null,
+      "dueDate": null,
+      "description": "Slack Link: \n\n[https://oro-work.slack.com/archives/C036NPDTGGN/p1767778268823369?thread_ts=1767778268.823369&cid=C036NPDTGGN](https://oro-work.slack.com/archives/C036NPDTGGN/p1767778268823369?thread_t",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-550",
+      "title": "Loan ID: OMGL10642558 | Duplicate payment entries are reflecting",
+      "assignee": "adityasinh.jc@orocorp.in",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-550/loan-id-omgl10642558-or-duplicate-payment-entries-are-reflecting",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMGL10642558\n\nWhat is the issue:\n\nCx has made only two installment payments and closure for this loan is Rs 54,301 and pending interest is Rs 49 but on admin it is reflecting as 0\n\ncx made on",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-548",
+      "title": "Loan ID: OMGL40235538 | Reject Loan and adjust ledger",
+      "assignee": "Shubham B",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-548/loan-id-omgl40235538-or-reject-loan-and-adjust-ledger",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMGL40235538\n\nWhat is the issue:\nLoan not booked by bank due to KYC issues. Disbursed GL is collected from cx. Please update the ledger and move the loan to loan closed status\n\nLedger sheet l",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-547",
+      "title": "Loan ID: OMBL10918549 | BRL_SL_COL is missing",
+      "assignee": "Shubham B",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-547/loan-id-ombl10918549-or-brl-sl-col-is-missing",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMBL10918549\n\nWhat is the issue:\n\nTakeover loan: OMGL10925051\nLoan amount: Rs 17,10,000\nPending interest: 0\nClosure: 0\nBL SL Collection part processed and received but not reflecting on BL pa",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-535",
+      "title": "P0 | KFSL PL Excess payments were initiated through API but not updated in admin",
+      "assignee": "Mayank N",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-535/p0-or-kfsl-pl-excess-payments-were-initiated-through-api-but-not",
+      "priority": null,
+      "dueDate": null,
+      "description": "What is the issue:\n\nKFSL PL Excess payments were initiated through API. Please clear the transferring status in loan page and fix the UTR for the PL excess payments. Please look here once know the fix",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-527",
+      "title": "Loan ID: OMBL30902732 | Ledger Adjustment",
+      "assignee": "Shubham B",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-527/loan-id-ombl30902732-or-ledger-adjustment",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMBL30902732\n\nWhat is the issue:\n\nTakeover loan: OMGL30903938\nAfter BRL excess Rs 86,108 was initiated, another GL collection entry has started to show on paisa. And SL transfer to cx was tra",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-521",
+      "title": "P0 - Hide the closure accepted card after 24 hours if customer hasn't completed a successful closure payment",
+      "assignee": "Sachin Kumar",
+      "labels": [
+        "bug",
+        "hotfix",
+        "severity-p0",
+        "backend",
+        "mobile"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-521/p0-hide-the-closure-accepted-card-after-24-hours-if-customer-hasnt",
+      "priority": "Urgent",
+      "dueDate": null,
+      "description": "## **Incident Link**\n\n* When the closure request is accepted and customer doesnt make a successful payment within 24 hours, we lock the closure from backend but show the foreclosure accepted banner in",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-510",
+      "title": "Add Lat Long to Tenmark Partner App logs and show on Admin",
+      "assignee": "Sachin Kumar",
+      "labels": [
+        "backend",
+        "mobile",
+        "feature"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-510/add-lat-long-to-tenmark-partner-app-logs-and-show-on-admin",
+      "priority": null,
+      "dueDate": null,
+      "description": "",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-505",
+      "title": "Hide SFL and Prestasi accounts on customer app during renewal flow",
+      "assignee": "Sachin Kumar",
+      "labels": [
+        "feature",
+        "hotfix",
+        "backend",
+        "mobile"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-505/hide-sfl-and-prestasi-accounts-on-customer-app-during-renewal-flow",
+      "priority": "High",
+      "dueDate": null,
+      "description": "When customers select bank account for renewal excess fund transfer, the following accounts shouldn't show up.\n\n## **Account details:**\n\n### **SFL :**\n\nAccount Number - 403020798930\nIFSC code - RATN00",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-497",
+      "title": "Loan ID: OMBL80880226 | Enable closure option from Day 1 for BRL loans",
+      "assignee": "Girish Baranda",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-497/loan-id-ombl80880226-or-enable-closure-option-from-day-1-for-brl-loans",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: **OMBL80880226**\n\nWhat is the issue: Enable closure option from Day 1 for BRL loans\n\nSlack Link: [https://oro-work.slack.com/archives/C036NPDTGGN/p1766473359513089](https://oro-work.slack.com",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-496",
+      "title": "Label and Map All System Errors with Internal Codes",
+      "assignee": "Mayank N",
+      "labels": [
+        "chore",
+        "backend",
+        "web"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-496/label-and-map-all-system-errors-with-internal-codes",
+      "priority": "Urgent",
+      "dueDate": null,
+      "description": "## **Goal**\n\n* Map all system errors to well defined internal error codes.\n* Replace vague error messages in customer apps and Ops systems(Admin & Core) with clear, audience appropriate messages that ",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-494",
+      "title": "Loan ID: OMGL40507911 | Auto renewal rejected case",
+      "assignee": "navjot.k@orocorp.in",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-494/loan-id-omgl40507911-or-auto-renewal-rejected-case",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMGL40507911\n\nWhat is the issue:\n\nAuto renewal rejected case. Please move old ID OMGL40507911 to GL and PL Closed status and move new ID OMGL40848877 to GL and PL rejected\n\n[https://docs.goog",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-493",
+      "title": "Loan ID: OMGL10600276 | Foreclosure option is displayed in Cx app after closure request time is completed & able to make closure payment",
+      "assignee": "Mayank N",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-493/loan-id-omgl10600276-or-foreclosure-option-is-displayed-in-cx-app",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMGL10600276\n\nWhat is the issue:\n\nTimeline of events:\n\n1. Customer raises closure request on 11th of December\n2. Closure request is auto-approved on 12th of December\n3. Closure  stays active ",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-486",
+      "title": "TCN / Real-time webhook changes",
+      "assignee": "Girish Baranda",
+      "labels": [
+        "feature",
+        "backend",
+        "unplanned"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-486/tcn-real-time-webhook-changes",
+      "priority": "Urgent",
+      "dueDate": null,
+      "description": "Mail from Manikandan Arumugam <[manikandan.arumugam@cleartouch.in](mailto:manikandan.arumugam@cleartouch.in)>\n\n\\--\n\n\"Hi Girish, I hope you have started working on the real-time webhook changes. These ",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-484",
+      "title": "P1 | At doc submitting stage in release visit loan status came back to gold store ideally it should be in loan account closer initiated",
+      "assignee": "Mayank N",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-484/p1-or-at-doc-submitting-stage-in-release-visit-loan-status-came-back",
+      "priority": null,
+      "dueDate": null,
+      "description": "What is the issue:\n\nIssue: at doc submitting stage in release visit loan status came back to gold store ideally it should be in loan account closer initiated\n\nSlack Link: [https://oro-work.slack.com/a",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-479",
+      "title": "Live Debugging tool for Customer Apps",
+      "assignee": "Sachin Kumar",
+      "labels": [
+        "feature",
+        "mobile"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-479/live-debugging-tool-for-customer-apps",
+      "priority": "High",
+      "dueDate": "2025-12-22",
+      "description": "@sachin.k is working on implementing a backend-web-mobile combo to fix customer app's bugs without seeking customer's login creds to resolve a bug. \n\n[Link to recording](https://drive.google.com/drive",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-476",
+      "title": "Loan ID: OMGL20693159 | Closure update flag issue",
+      "assignee": "Mayank N",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-476/loan-id-omgl20693159-or-closure-update-flag-issue",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMGL20693159\n\nWhat is the issue:\n\n1. Customer requested loan closure on 15 Dec\n2. Closure was approved same day\n3. Customer did not complete closure payment in 24 hrs\n4. Closure request was l",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-474",
+      "title": "Loan ID: OMGL30863762 | Agent has completed the visit but no logs of Gold storage",
+      "assignee": "Pragadeesh N",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-474/loan-id-omgl30863762-or-agent-has-completed-the-visit-but-no-logs-of",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMGL30863762\n\nWhat is the issue: Agent has completed the visit but no logs of Gold storage\n\nSlack Link: [https://oro-work.slack.com/archives/C036NPDTGGN/p1766050561926819](https://oro-work.sl",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-473",
+      "title": "Loan ID: OMGL90850207 | Ledger Update",
+      "assignee": "Shubham B",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-473/loan-id-omgl90850207-or-ledger-update",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMGL90850207\n\nWhat is the issue:\n\nTakeover loan\nLoan was booked on 12 Dec but PL process was completed on 15 Dec and amounts transferred on the same date.\nPlease change opening entries of GL ",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-442",
+      "title": "Renewed Loan Status is Not Getting Updated",
+      "assignee": "Girish Baranda",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-442/renewed-loan-status-is-not-getting-updated",
+      "priority": null,
+      "dueDate": null,
+      "description": "Slack Chat: [https://oro-work.slack.com/archives/C036NPDTGGN/p1765866320154149](https://oro-work.slack.com/archives/C036NPDTGGN/p1765866320154149)\n\nWhat is the issue: The status of renewed loans are n",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-436",
+      "title": "Loan ID: OMGL40416076 | Outstanding Loan Amount Displayed for Closed Loan in Admin",
+      "assignee": "Shubham B",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-436/loan-id-omgl40416076-or-outstanding-loan-amount-displayed-for-closed",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMGL40416076\n\nSlack Chat: [https://oro-work.slack.com/archives/C036NPDTGGN/p1765798616753449](https://oro-work.slack.com/archives/C036NPDTGGN/p1765798616753449)\n\nWhat is the issue: The Loan h",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-427",
+      "title": "Loan ID: OMGL30850521 | E-Sign Status Sync Issue for Renewal Loans",
+      "assignee": "Girish Baranda",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0",
+        "backend"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-427/loan-id-omgl30850521-or-e-sign-status-sync-issue-for-renewal-loans",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMGL30850521\n\nSlack Chat: [https://oro-work.slack.com/archives/C036NPDTGGN/p1765784469908739](https://oro-work.slack.com/archives/C036NPDTGGN/p1765784469908739)\n\nWhat is the issue: The eSign ",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-216",
+      "title": "E-sign is not generating for 10mark",
+      "assignee": "Sachin Kumar",
+      "labels": [
+        "unplanned"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-216/e-sign-is-not-generating-for-10mark",
+      "priority": "High",
+      "dueDate": null,
+      "description": "[WhatsApp Video 2025-11-17 at 12.35.24 PM.mp4](https://uploads.linear.app/b7c14e48-163e-4e79-a468-c1799d1075bc/225a9c69-7911-4969-a302-3bbc5389caee/ae75b882-a946-4689-94d0-ff734fce665a)",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-181",
+      "title": "P1 | All response success in third party api response Pan details are not visible on admin",
+      "assignee": "Mayank N",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0",
+        "unplanned"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-181/p1-or-all-response-success-in-third-party-api-response-pan-details-are",
+      "priority": null,
+      "dueDate": null,
+      "description": "What is the issue: all response success in thord \\[arty api respose Pan details are not visible on admin\n\nSlack Link: [https://oro-work.slack.com/archives/C036NPDTGGN/p1763017008084699](https://oro-wo",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-153",
+      "title": "Loan ID: TCGL30780373 | while customer creation 'Column 'nan' doesn't exit error is thrown",
+      "assignee": "vagheshkumar.sp@orocorp.in",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0",
+        "unplanned"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-153/loan-id-tcgl30780373-or-while-customer-creation-column-nan-doesnt-exit",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: TCGL30780373\n\nWhat is the issue: while customer creation 'Column 'nan' doesn't exit error is thrown for Kumbhat Loan\nSlack: [https://oro-work.slack.com/archives/C036NPDTGGN/p1762429460126559]",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-152",
+      "title": "P0 - Difference of 1 Rs. between PL amount and PL fund transfer",
+      "assignee": "Girish Baranda",
+      "labels": [
+        "bug",
+        "backend",
+        "hotfix",
+        "severity-p0",
+        "quick_release_2",
+        "unplanned"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-152/p0-difference-of-1-rs-between-pl-amount-and-pl-fund-transfer",
+      "priority": "Urgent",
+      "dueDate": null,
+      "description": "Labels\n`bug, <backend|web|mobile>, hotfix, severity-p0|p1`\n\n## **Incident Link**\n\n* there a difference of 1re between PL amount and PL fund transfer amount - example loan id - OMGL10774880\n\n## **Impac",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-150",
+      "title": "Loan ID: OMGL10772297 | Getting error when trying to mark QC failed",
+      "assignee": "Mayank N",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0",
+        "unplanned"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-150/loan-id-omgl10772297-or-getting-error-when-trying-to-mark-qc-failed",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMGL10772297\n\nWhat is the issue: Getting error when trying to mark QC failed\n\nSlack link: [https://oro-work.slack.com/archives/C036NPDTGGN/p1762156310951679](https://oro-work.slack.com/archiv",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-148",
+      "title": "P1 - Force re-onboarding for all users with manual onboarding",
+      "assignee": "Sachin Kumar",
+      "labels": [
+        "bug",
+        "backend",
+        "mobile",
+        "hotfix",
+        "severity-p1",
+        "unplanned",
+        "quick_release_2"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-148/p1-force-re-onboarding-for-all-users-with-manual-onboarding",
+      "priority": "High",
+      "dueDate": null,
+      "description": "Labels\n`bug, <backend|web|mobile>, hotfix, severity-p0|p1`\n\n## **Incident Link**\n\n* Many users have manually verified details during their onboarding. \n\n## **Impact**\n\n* This will delay verification a",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-142",
+      "title": "P0 - Release OTP not visible in Partner app",
+      "assignee": "Girish Baranda",
+      "labels": [
+        "bug",
+        "hotfix",
+        "backend",
+        "severity-p0",
+        "unplanned",
+        "quick_release_2"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-142/p0-release-otp-not-visible-in-partner-app",
+      "priority": "High",
+      "dueDate": null,
+      "description": "## **Incident Link**\n\n* Partners are not able to view the release OTP during the release visit\n* At times the partner app gets stuck on verify OTP screen even though the release OTP is confirmed by ba",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-141",
+      "title": "P1 - Pan and Aadhar is displayed as linked in Oro but not in Tenmark core",
+      "assignee": "Girish Baranda",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0",
+        "unplanned"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-141/p1-pan-and-aadhar-is-displayed-as-linked-in-oro-but-not-in-tenmark",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: TCGL30776298\n\nWhat is the issue: \n\nWe found the issue, in Tenmark, we’re using **Decentro** for PAN verification, whereas in ORO, we use Cashfree.\nDecentro doesn’t provide any field indicatin",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-92",
+      "title": "Stamp Duty removal for Federal Loans",
+      "assignee": "Mayank N",
+      "labels": [
+        "bug",
+        "hotfix-urgent",
+        "severity-p0",
+        "unplanned",
+        "quick_release_2"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-92/stamp-duty-removal-for-federal-loans",
+      "priority": "Urgent",
+      "dueDate": null,
+      "description": "## **Incident Link**\n\n* Stamp duty added during loan closure at the branches are causing ledger mismatch when customer tries to release their gold\n\n## **Impact**\n\n* This delays the release process as ",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-85",
+      "title": "P2 - Renewal error messages - Admin",
+      "assignee": "Pragadeesh N",
+      "labels": [
+        "bug",
+        "backend",
+        "web",
+        "hotfix",
+        "severity-p2",
+        "unplanned"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-85/p2-renewal-error-messages-admin",
+      "priority": "Medium",
+      "dueDate": null,
+      "description": "## **Incident Link**\n\n### Issue\n\n* When an admin tries to fetch renewal plans, the system currently doesn’t display meaningful or specific error messages. This makes it difficult for users to understa",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-49",
+      "title": "Hide manual payment entries in Customer App",
+      "assignee": "Pragadeesh N",
+      "labels": [
+        "backend",
+        "mobile",
+        "unplanned"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-49/hide-manual-payment-entries-in-customer-app",
+      "priority": null,
+      "dueDate": null,
+      "description": "## **Context**\n\n* Problem & business outcome: For all manual payments loan ops/backend records in ledger, the entry shouldn't be shown in the customer app as this creates confusion on customer end\n\n##",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-38",
+      "title": "Add \"Request Statement\" CTA – Loan Details in Admin(Paisa Tab)",
+      "assignee": "Prakhar Singh Pal",
+      "labels": [
+        "feature",
+        "web",
+        "unplanned"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-38/add-request-statement-cta-loan-details-in-adminpaisa-tab",
+      "priority": "High",
+      "dueDate": null,
+      "description": "## **Context**\n\n* Loan account statements are often requested manually from Federal Bank, requiring repeated drafting of similar emails. This process is inefficient, error prone, and increases manual ",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-36",
+      "title": "Add PAN-Aadhaar Linking Check & Update Liveliness Threshold – Cx App Onboarding Flow",
+      "assignee": "Prakhar Singh Pal",
+      "labels": [
+        "backend",
+        "feature",
+        "mobile",
+        "unplanned"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-36/add-pan-aadhaar-linking-check-and-update-liveliness-threshold-cx-app",
+      "priority": "High",
+      "dueDate": null,
+      "description": "## **Context**\n\n* Currently, PAN–Aadhaar linkage is not validated after Aadhaar and PAN verification, risking incomplete onboarding and loan rejections. Also, the existing liveliness threshold may lea",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-34",
+      "title": "Reduce Website load speed - oromoney.in",
+      "assignee": "Pragadeesh N",
+      "labels": [
+        "web",
+        "chore",
+        "unplanned"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-34/reduce-website-load-speed-oromoneyin",
+      "priority": null,
+      "dueDate": null,
+      "description": "## **Context**\n\n* Problem & business outcome: Our website currently loads at 3.2 seconds. Getting it down to 2 seconds will reduce dropoffs\n\n## **Scope**\n\n* In scope:\n  * Reduce website speed \n* Out o",
+      "subIssues": []
     }
   ],
   "inDevelopment": [
     {
-      "id": "ENG-161",
-      "title": "Appointment Details Not Updated in DB",
-      "assignee": "Girish",
-      "priority": "High",
-      "dueDate": "2026-01-21",
-      "status": "In Development",
-      "labels": ["bug", "severity-p1", "hotfix"],
-      "url": "https://linear.app/orocorp/issue/ENG-161",
-      "description": "appointment_confirmed_at column not updating when appointments booked in Quali. Impacting MIS reporting and incentive calculations.",
-      "latestUpdate": "8 Jan: Prakhar shared screenshots showing mismatch between Quali and DB. Girish investigating timestamp discrepancy.",
+      "id": "ENG-598",
+      "title": "Loan ID: OMGL40760504 | PL plan not displayed during renewal",
+      "assignee": "harsh.m@orocorp.in",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-598/loan-id-omgl40760504-or-pl-plan-not-displayed-during-renewal",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMGL40760504\n\nWhat is the issue:\n\ncustomer couldn't see any PL plans but it is available in admin\n\nSlack Link: [https://oro-work.slack.com/archives/C036NPDTGGN/p1768203822387039](https://oro-",
       "subIssues": []
+    },
+    {
+      "id": "ENG-456",
+      "title": "Loan Process Having Synchronous Webhook Communication Flow",
+      "assignee": "Mayank N",
+      "labels": [
+        "backend",
+        "chore"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-456/loan-process-having-synchronous-webhook-communication-flow",
+      "priority": null,
+      "dueDate": null,
+      "description": "## **Goal**\n\n* Identify all loan process flows where webhook communication is handled synchronously.\n* Analyse these flows and transition the communication to asynchronous handling.\n* This will help a",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-453",
+      "title": "Ringmaster – Web Platform Implementation",
+      "assignee": "shrey.p@orocorp.in",
+      "labels": [
+        "feature"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-453/ringmaster-web-platform-implementation",
+      "priority": "Medium",
+      "dueDate": null,
+      "description": "Implement the **Web platform scope** of the Ringmaster system to support unified call & lead management across Digital and TCN workflows. This ticket ensures the web application correctly integrates w",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-397",
+      "title": "RBAC-OROCORP: Admin side UI changes.",
+      "assignee": "shrey.p@orocorp.in",
+      "labels": [
+        "feature",
+        "web"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-397/rbac-orocorp-admin-side-ui-changes",
+      "priority": "Medium",
+      "dueDate": null,
+      "description": "## **Platform-Specific Acceptance Criteria**\n\n* Functional:\n  * This ticket is linked to following web ticket [WEB-2983](https://linear.app/orocorp/issue/WEB-2983/rbac-revamp-tracking)\n  * We need to ",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-396",
+      "title": "RBAC-OROCORP: BACKEND IMPLEMENTATION",
+      "assignee": "kushal.ps@orocorp.in",
+      "labels": [
+        "feature",
+        "backend"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-396/rbac-orocorp-backend-implementation",
+      "priority": "Medium",
+      "dueDate": null,
+      "description": "Labels:\n`RBAC, <BACKEND>`\n\n\n---\n\n## Context & Approach\n\n### Why We Skipped RPS Pattern\n\nWe evaluated the basic **RPS (Role-Permission-Soft)** pattern but determined it wouldn't meet our scalability ne",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-385",
+      "title": "RBAC Revamp System - Admin | Argo 1-2 | Quali | Partner App",
+      "assignee": "Prakhar Singh Pal",
+      "labels": [
+        "feature",
+        "backend",
+        "web",
+        "mobile",
+        "unplanned"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-385/rbac-revamp-system-admin-or-argo-1-2-or-quali-or-partner-app",
+      "priority": "Medium",
+      "dueDate": "2026-01-31",
+      "description": "## **Purpose**\n\n* The **Role Based Access Control(RBAC)** feature aims to provide a centralized system for managing user roles and permissions without requiring tech or backend intervention. It ensure",
+      "subIssues": [
+        {
+          "id": "ENG-397",
+          "title": "RBAC-OROCORP: Admin side UI changes.",
+          "assignee": "shrey.p@orocorp.in",
+          "status": "In Development",
+          "team": "Engineering"
+        },
+        {
+          "id": "ENG-396",
+          "title": "RBAC-OROCORP: BACKEND IMPLEMENTATION",
+          "assignee": "kushal.ps@orocorp.in",
+          "status": "In Development",
+          "team": "Engineering"
+        }
+      ]
     },
     {
       "id": "ENG-339",
       "title": "AGVS Phase 1",
-      "assignee": "Sachin",
+      "assignee": "Sachin Kumar",
+      "labels": [
+        "feature",
+        "backend",
+        "mobile",
+        "unplanned"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-339/agvs-phase-1",
       "priority": "High",
       "dueDate": "2025-12-27",
-      "status": "In Development",
-      "labels": ["feature", "backend", "mobile"],
-      "url": "https://linear.app/orocorp/issue/ENG-339",
-      "description": "Automated Gold Vault System at Oro Safe Chennai — OTP verification, selfie capture, payment, tray retrieval/storage.",
-      "progress": "1/2",
+      "description": "Labels:\n`feature, backend|web|mobile|infra + optional city-[name], release-blocker, hotfix`\n\n## **Context**\n\n* Problem & business outcome: The Automated Gold Vault System (AGVS) is Oro’s proprietary v",
       "subIssues": [
         {
           "id": "ENG-388",
           "title": "AGVS BACKEND",
-          "assignee": "Girish",
+          "assignee": "Girish Baranda",
           "status": "Done",
           "team": "Engineering"
         },
         {
           "id": "MOB-2941",
           "title": "AGVS Mobile",
-          "assignee": "Aniket",
+          "assignee": "Aniket Singh",
           "status": "In Development",
-          "team": "Mobile Dev",
-          "progress": "0/4",
-          "subIssues": [
-            { "id": "MOB-2942", "title": "App Setup", "status": "In Review" },
-            { "id": "MOB-2947", "title": "Storage Flow", "status": "In Review" },
-            { "id": "MOB-2948", "title": "Retrieval Flow", "status": "In Review" },
-            { "id": "MOB-3009", "title": "UI Review", "status": "In Review" }
-          ]
+          "team": "Mobile Dev"
         }
       ]
     },
     {
       "id": "ENG-338",
-      "title": "Partner App Revamp",
-      "assignee": "Sachin",
+      "title": "Oro Partner App Revamp",
+      "assignee": "Sachin Kumar",
+      "labels": [
+        "feature",
+        "mobile",
+        "unplanned"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-338/oro-partner-app-revamp",
       "priority": "High",
       "dueDate": "2026-01-24",
-      "status": "In Development",
-      "labels": ["feature", "mobile"],
-      "url": "https://linear.app/orocorp/issue/ENG-338",
-      "description": "UI/UX revamp only, no flow changes.",
-      "progress": "6/9",
+      "description": "## **Context**\n\n* Problem & business outcome: Our partner app has to be revamped for better performance to our partners. \n\n## **Scope**\n\n* In scope:\n  * Revamp of the existing screens \n* Out of scope:",
       "subIssues": [
         {
           "id": "MOB-2934",
           "title": "Px App Revamp",
-          "assignee": "Sachin",
+          "assignee": "Sachin Kumar",
           "status": "In Development",
-          "team": "Mobile Dev",
-          "subIssues": [
-            { "id": "MOB-2935", "title": "Login Flow", "status": "Ready for QA", "assignee": "Mukesh" },
-            { "id": "MOB-2936", "title": "Home Page", "status": "Ready for QA", "assignee": "Mukesh" },
-            { "id": "MOB-2937", "title": "BRL Loan", "status": "Ready for QA", "assignee": "Mukesh" },
-            { "id": "MOB-2938", "title": "Fresh GL Loan", "status": "Ready for QA", "assignee": "Resham" },
-            { "id": "MOB-2939", "title": "Takeover GL Loan", "status": "Ready for QA", "assignee": "Resham" },
-            { "id": "MOB-2940", "title": "DC GL Loan", "status": "In Review", "assignee": "Resham" },
-            { "id": "MOB-2971", "title": "Handover Visit", "status": "In Review", "assignee": "Resham" },
-            { "id": "MOB-2987", "title": "ELR Loan", "status": "Done", "assignee": "Mukesh" },
-            { "id": "MOB-3012", "title": "RBAC Changes", "status": "Ready for Development", "assignee": "Resham" }
-          ]
+          "team": "Mobile Dev"
         }
       ]
     },
     {
-      "id": "ENG-385",
-      "title": "RBAC Revamp System",
-      "assignee": "Prakhar",
+      "id": "ENG-291",
+      "title": "Ringmaster - Call & Lead Management System",
+      "assignee": "Prakhar Singh Pal",
+      "labels": [
+        "feature",
+        "backend",
+        "web",
+        "unplanned"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-291/ringmaster-call-and-lead-management-system",
       "priority": "Medium",
-      "dueDate": "2026-01-31",
-      "status": "In Development",
-      "labels": ["feature", "backend", "web", "mobile"],
-      "url": "https://linear.app/orocorp/issue/ENG-385",
-      "description": "Centralized role/permission management across Admin, Argo, Quali, Partner App.",
+      "dueDate": null,
+      "description": "## **Purpose**\n\n* Cross-platform tracker for Ringmaster, the new call & lead management system designed to unify inbound, outbound, and autodialer workflows across Digital and TCN calling teams.\n* Rin",
       "subIssues": [
-        { "id": "ENG-396", "title": "Backend Implementation", "status": "In Development", "assignee": "Kushal", "estimate": "64 pts" },
-        { "id": "ENG-397", "title": "Admin UI Changes", "status": "In Development", "assignee": "Shrey" },
-        { "id": "WEB-2983", "title": "Web Frontend Tracking", "status": "In Development", "assignee": "Shrey", "team": "Web Frontend" }
+        {
+          "id": "ENG-453",
+          "title": "Ringmaster – Web Platform Implementation",
+          "assignee": "shrey.p@orocorp.in",
+          "status": "In Development",
+          "team": "Engineering"
+        }
       ]
     },
     {
-      "id": "ENG-291",
-      "title": "Ringmaster - Call & Lead Management",
-      "assignee": "Prakhar",
-      "priority": "Medium",
-      "status": "In Development",
-      "labels": ["feature", "backend", "web"],
-      "url": "https://linear.app/orocorp/issue/ENG-291",
-      "description": "Unified call/lead management for Digital and TCN teams.",
-      "subIssues": [
-        { "id": "ENG-453", "title": "Web Platform Implementation", "status": "In Development", "assignee": "Shrey" },
-        { "id": "WEB-2997", "title": "Web Tracking", "status": "In Development", "assignee": "Shrey", "team": "Web Frontend" }
-      ]
+      "id": "ENG-161",
+      "title": "P1 - Appointment Details Not Updated for Lead in DB",
+      "assignee": "Girish Baranda",
+      "labels": [
+        "bug",
+        "severity-p1",
+        "hotfix",
+        "quick_release_2",
+        "unplanned"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-161/p1-appointment-details-not-updated-for-lead-in-db",
+      "priority": "High",
+      "dueDate": "2026-01-21",
+      "description": "## **Incident Link**\n\n* We have noticed an issue where the appointments booked by callers in the **Quali** are not being updated in **Metabase**.\n* Appointment details not getting updated in appointme",
+      "subIssues": []
     },
     {
       "id": "ENG-105",
-      "title": "Caratmeter API Integration",
-      "assignee": "Girish",
+      "title": "Caratmeter API integration",
+      "assignee": "Girish Baranda",
+      "labels": [
+        "hotfix-urgent",
+        "unplanned",
+        "quick_release_2"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-105/caratmeter-api-integration",
       "priority": "High",
       "dueDate": "2025-12-27",
-      "status": "In Development",
-      "labels": ["hotfix-urgent"],
-      "url": "https://linear.app/orocorp/issue/ENG-105",
-      "subIssues": []
-    },
-    {
-      "id": "ENG-456",
-      "title": "Async Webhook Communication",
-      "assignee": "Mayank",
-      "status": "In Development",
-      "labels": ["backend", "chore"],
-      "url": "https://linear.app/orocorp/issue/ENG-456",
-      "description": "Convert synchronous webhook flows to async to handle microservice downtime.",
-      "subIssues": []
-    },
-    {
-      "id": "ENG-598",
-      "title": "PL Plan Not Displayed During Renewal",
-      "assignee": "Harsh",
-      "status": "In Development",
-      "labels": ["bug", "hotfix", "severity-p0"],
-      "url": "https://linear.app/orocorp/issue/ENG-598",
-      "description": "PL plan minimum ₹1000 but eligible value ₹991, causing plans to not display.",
+      "description": "@girish.b added ticket here",
       "subIssues": []
     }
   ],
   "actionItems": [
-    { "priority": "critical", "item": "ENG-619", "action": "Push to prod — sitting in Ready for Release" },
-    { "priority": "critical", "item": "ENG-161", "action": "Due today, still in dev — check with Girish" },
-    { "priority": "critical", "item": "ENG-655", "action": "P0 Urgent, needs sub-ticket breakdown" },
-    { "priority": "warning", "item": "ENG-339, ENG-105", "action": "25+ days overdue — status check needed" },
-    { "priority": "warning", "item": "Girish load", "action": "4 items assigned including 2 P0s" },
-    { "priority": "info", "item": "ENG-338", "action": "On track for 24 Jan, most mobile work in QA" },
-    { "priority": "info", "item": "ENG-385", "action": "On track for 31 Jan" }
+    {
+      "priority": "critical",
+      "item": "ENG-619",
+      "action": "Ready for release — push to prod"
+    },
+    {
+      "priority": "warning",
+      "item": "ENG-339",
+      "action": "Overdue since 2025-12-27"
+    },
+    {
+      "priority": "warning",
+      "item": "ENG-161",
+      "action": "Overdue since 2026-01-21"
+    },
+    {
+      "priority": "warning",
+      "item": "ENG-105",
+      "action": "Overdue since 2025-12-27"
+    },
+    {
+      "priority": "critical",
+      "item": "ENG-161",
+      "action": "Due today"
+    }
   ]
 }
