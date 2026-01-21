@@ -105,7 +105,7 @@
     },
     {
       "parameters": {
-        "owner": "YOUR_GITHUB_ORG",
+        "owner": "sreekeshkrish",
         "repository": "eng-dashboard",
         "filePath": "public/data.json",
         "commitMessage": "=`Daily report update - ${new Date().toISOString().split('T')[0]}`",
@@ -126,8 +126,8 @@
     },
     {
       "parameters": {
-        "channel": "#eng-daily-report",
-        "text": "=🚀 *ENG Daily Report* — {{ $now.format('DD MMM YYYY') }}\n\n✅ *Completed:* {{ $json.summary.completed24h }} | 🚀 *Release:* {{ $json.summary.readyForRelease }} | 🧪 *QA:* {{ $json.summary.readyForQA }} | 🔨 *Dev:* {{ $json.summary.inDevelopment }}\n\n{{ $json.actionItems.length > 0 ? '*Action Items:*\\n' + $json.actionItems.slice(0,5).map(i => (i.priority === 'critical' ? '🔴' : '🟡') + ' ' + i.item + ' — ' + i.action).join('\\n') : 'No urgent action items' }}\n\n<https://eng-dashboard.vercel.app|View Full Report>",
+        "channel": "#DLD",
+        "text": "=🚀 *ENG Daily Report* — {{ $now.format('DD MMM YYYY') }}\n\n✅ *Completed:* {{ $json.summary.completed24h }} | 🚀 *Release:* {{ $json.summary.readyForRelease }} | 🧪 *QA:* {{ $json.summary.readyForQA }} | 🔨 *Dev:* {{ $json.summary.inDevelopment }}\n\n{{ $json.actionItems.length > 0 ? '*Action Items:*\\n' + $json.actionItems.slice(0,5).map(i => (i.priority === 'critical' ? '🔴' : '🟡') + ' ' + i.item + ' — ' + i.action).join('\\n') : 'No urgent action items' }}\n\n<https://orodld.vercel.app|View Full Report>",
         "otherOptions": {}
       },
       "id": "slack-notify",
