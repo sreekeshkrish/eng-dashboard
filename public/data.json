@@ -1,0 +1,240 @@
+{
+  "generatedAt": "2026-01-21T08:00:00.000Z",
+  "summary": {
+    "completed24h": 3,
+    "readyForRelease": 1,
+    "readyForQA": 1,
+    "inDevelopment": 8,
+    "readyForDev": 8,
+    "blockers": 0
+  },
+  "completed": [
+    {
+      "id": "ENG-654",
+      "title": "PL Split not reflecting (OMGL10769044)",
+      "assignee": "Harsh",
+      "labels": ["bug", "hotfix", "severity-p0"],
+      "url": "https://linear.app/orocorp/issue/ENG-654"
+    },
+    {
+      "id": "ENG-653",
+      "title": "Payment status wrong (OMGL50751277)",
+      "assignee": "Harsh",
+      "labels": ["bug", "hotfix", "severity-p0"],
+      "url": "https://linear.app/orocorp/issue/ENG-653"
+    },
+    {
+      "id": "ENG-624",
+      "title": "BRL_GL_COL entry missing (OMBL90960439)",
+      "assignee": "Harsh",
+      "labels": ["bug", "hotfix", "severity-p0"],
+      "url": "https://linear.app/orocorp/issue/ENG-624"
+    }
+  ],
+  "readyForRelease": [
+    {
+      "id": "ENG-619",
+      "title": "Duplicate Release Visit fix (Redis locking)",
+      "assignee": "Kushal",
+      "labels": ["bug", "hotfix", "severity-p0"],
+      "url": "https://linear.app/orocorp/issue/ENG-619",
+      "dueDate": "2026-01-20",
+      "description": "Redis-based locking to prevent concurrent duplicate inserts in visits table."
+    }
+  ],
+  "readyForQA": [
+    {
+      "id": "ENG-656",
+      "title": "Cx app profile update & localisation",
+      "assignee": "Aniket",
+      "labels": ["mobile", "this-week"],
+      "url": "https://linear.app/orocorp/issue/ENG-656"
+    }
+  ],
+  "readyForDev": [
+    {
+      "id": "ENG-655",
+      "title": "Federal Bank logo update",
+      "assignee": "Girish",
+      "priority": "Urgent",
+      "labels": ["hotfix", "severity-p0"],
+      "url": "https://linear.app/orocorp/issue/ENG-655"
+    },
+    {
+      "id": "ENG-657",
+      "title": "Add 'Business' to Loan Purpose enum",
+      "assignee": "Girish",
+      "priority": "P0",
+      "labels": ["bug", "hotfix", "severity-p0"],
+      "url": "https://linear.app/orocorp/issue/ENG-657"
+    },
+    {
+      "id": "ENG-652",
+      "title": "TPF Ledger adjustment (OMGL10698023)",
+      "assignee": "Harsh",
+      "priority": "P0",
+      "labels": ["bug", "hotfix", "severity-p0"],
+      "url": "https://linear.app/orocorp/issue/ENG-652"
+    },
+    {
+      "id": "ENG-602",
+      "title": "Loan not booked, adjust recovery",
+      "assignee": "Harsh",
+      "priority": "P0",
+      "labels": ["bug", "hotfix", "severity-p0"],
+      "url": "https://linear.app/orocorp/issue/ENG-602"
+    }
+  ],
+  "inDevelopment": [
+    {
+      "id": "ENG-161",
+      "title": "Appointment Details Not Updated in DB",
+      "assignee": "Girish",
+      "priority": "High",
+      "dueDate": "2026-01-21",
+      "status": "In Development",
+      "labels": ["bug", "severity-p1", "hotfix"],
+      "url": "https://linear.app/orocorp/issue/ENG-161",
+      "description": "appointment_confirmed_at column not updating when appointments booked in Quali. Impacting MIS reporting and incentive calculations.",
+      "latestUpdate": "8 Jan: Prakhar shared screenshots showing mismatch between Quali and DB. Girish investigating timestamp discrepancy.",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-339",
+      "title": "AGVS Phase 1",
+      "assignee": "Sachin",
+      "priority": "High",
+      "dueDate": "2025-12-27",
+      "status": "In Development",
+      "labels": ["feature", "backend", "mobile"],
+      "url": "https://linear.app/orocorp/issue/ENG-339",
+      "description": "Automated Gold Vault System at Oro Safe Chennai — OTP verification, selfie capture, payment, tray retrieval/storage.",
+      "progress": "1/2",
+      "subIssues": [
+        {
+          "id": "ENG-388",
+          "title": "AGVS BACKEND",
+          "assignee": "Girish",
+          "status": "Done",
+          "team": "Engineering"
+        },
+        {
+          "id": "MOB-2941",
+          "title": "AGVS Mobile",
+          "assignee": "Aniket",
+          "status": "In Development",
+          "team": "Mobile Dev",
+          "progress": "0/4",
+          "subIssues": [
+            { "id": "MOB-2942", "title": "App Setup", "status": "In Review" },
+            { "id": "MOB-2947", "title": "Storage Flow", "status": "In Review" },
+            { "id": "MOB-2948", "title": "Retrieval Flow", "status": "In Review" },
+            { "id": "MOB-3009", "title": "UI Review", "status": "In Review" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-338",
+      "title": "Partner App Revamp",
+      "assignee": "Sachin",
+      "priority": "High",
+      "dueDate": "2026-01-24",
+      "status": "In Development",
+      "labels": ["feature", "mobile"],
+      "url": "https://linear.app/orocorp/issue/ENG-338",
+      "description": "UI/UX revamp only, no flow changes.",
+      "progress": "6/9",
+      "subIssues": [
+        {
+          "id": "MOB-2934",
+          "title": "Px App Revamp",
+          "assignee": "Sachin",
+          "status": "In Development",
+          "team": "Mobile Dev",
+          "subIssues": [
+            { "id": "MOB-2935", "title": "Login Flow", "status": "Ready for QA", "assignee": "Mukesh" },
+            { "id": "MOB-2936", "title": "Home Page", "status": "Ready for QA", "assignee": "Mukesh" },
+            { "id": "MOB-2937", "title": "BRL Loan", "status": "Ready for QA", "assignee": "Mukesh" },
+            { "id": "MOB-2938", "title": "Fresh GL Loan", "status": "Ready for QA", "assignee": "Resham" },
+            { "id": "MOB-2939", "title": "Takeover GL Loan", "status": "Ready for QA", "assignee": "Resham" },
+            { "id": "MOB-2940", "title": "DC GL Loan", "status": "In Review", "assignee": "Resham" },
+            { "id": "MOB-2971", "title": "Handover Visit", "status": "In Review", "assignee": "Resham" },
+            { "id": "MOB-2987", "title": "ELR Loan", "status": "Done", "assignee": "Mukesh" },
+            { "id": "MOB-3012", "title": "RBAC Changes", "status": "Ready for Development", "assignee": "Resham" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ENG-385",
+      "title": "RBAC Revamp System",
+      "assignee": "Prakhar",
+      "priority": "Medium",
+      "dueDate": "2026-01-31",
+      "status": "In Development",
+      "labels": ["feature", "backend", "web", "mobile"],
+      "url": "https://linear.app/orocorp/issue/ENG-385",
+      "description": "Centralized role/permission management across Admin, Argo, Quali, Partner App.",
+      "subIssues": [
+        { "id": "ENG-396", "title": "Backend Implementation", "status": "In Development", "assignee": "Kushal", "estimate": "64 pts" },
+        { "id": "ENG-397", "title": "Admin UI Changes", "status": "In Development", "assignee": "Shrey" },
+        { "id": "WEB-2983", "title": "Web Frontend Tracking", "status": "In Development", "assignee": "Shrey", "team": "Web Frontend" }
+      ]
+    },
+    {
+      "id": "ENG-291",
+      "title": "Ringmaster - Call & Lead Management",
+      "assignee": "Prakhar",
+      "priority": "Medium",
+      "status": "In Development",
+      "labels": ["feature", "backend", "web"],
+      "url": "https://linear.app/orocorp/issue/ENG-291",
+      "description": "Unified call/lead management for Digital and TCN teams.",
+      "subIssues": [
+        { "id": "ENG-453", "title": "Web Platform Implementation", "status": "In Development", "assignee": "Shrey" },
+        { "id": "WEB-2997", "title": "Web Tracking", "status": "In Development", "assignee": "Shrey", "team": "Web Frontend" }
+      ]
+    },
+    {
+      "id": "ENG-105",
+      "title": "Caratmeter API Integration",
+      "assignee": "Girish",
+      "priority": "High",
+      "dueDate": "2025-12-27",
+      "status": "In Development",
+      "labels": ["hotfix-urgent"],
+      "url": "https://linear.app/orocorp/issue/ENG-105",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-456",
+      "title": "Async Webhook Communication",
+      "assignee": "Mayank",
+      "status": "In Development",
+      "labels": ["backend", "chore"],
+      "url": "https://linear.app/orocorp/issue/ENG-456",
+      "description": "Convert synchronous webhook flows to async to handle microservice downtime.",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-598",
+      "title": "PL Plan Not Displayed During Renewal",
+      "assignee": "Harsh",
+      "status": "In Development",
+      "labels": ["bug", "hotfix", "severity-p0"],
+      "url": "https://linear.app/orocorp/issue/ENG-598",
+      "description": "PL plan minimum ₹1000 but eligible value ₹991, causing plans to not display.",
+      "subIssues": []
+    }
+  ],
+  "actionItems": [
+    { "priority": "critical", "item": "ENG-619", "action": "Push to prod — sitting in Ready for Release" },
+    { "priority": "critical", "item": "ENG-161", "action": "Due today, still in dev — check with Girish" },
+    { "priority": "critical", "item": "ENG-655", "action": "P0 Urgent, needs sub-ticket breakdown" },
+    { "priority": "warning", "item": "ENG-339, ENG-105", "action": "25+ days overdue — status check needed" },
+    { "priority": "warning", "item": "Girish load", "action": "4 items assigned including 2 P0s" },
+    { "priority": "info", "item": "ENG-338", "action": "On track for 24 Jan, most mobile work in QA" },
+    { "priority": "info", "item": "ENG-385", "action": "On track for 31 Jan" }
+  ]
+}

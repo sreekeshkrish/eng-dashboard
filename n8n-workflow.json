@@ -1,0 +1,177 @@
+{
+  "name": "ENG Daily Report Generator",
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 8 * * *"
+            }
+          ]
+        }
+      },
+      "id": "schedule-trigger",
+      "name": "Daily 8AM IST",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.1,
+      "position": [0, 0],
+      "notes": "Triggers daily at 8:00 AM IST"
+    },
+    {
+      "parameters": {
+        "url": "https://api.linear.app/graphql",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "query",
+              "value": "query { issues(filter: { team: { key: { eq: \"ENG\" } }, state: { type: { eq: \"completed\" } }, updatedAt: { gte: \"-P1D\" } }, first: 50) { nodes { identifier title assignee { name } labels { nodes { name } } url } } }"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "linear-completed",
+      "name": "Fetch Completed Issues",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [220, -100],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "LINEAR_API_KEY",
+          "name": "Linear API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "url": "https://api.linear.app/graphql",
+        "authentication": "genericCredentialType",
+        "genericAuthType": "httpHeaderAuth",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "query",
+              "value": "query { issues(filter: { team: { key: { eq: \"ENG\" } }, state: { name: { in: [\"In Development\", \"Ready for Release\", \"Ready for QA\", \"Ready for Development\"] } } }, first: 100) { nodes { identifier title description assignee { name } priority dueDate labels { nodes { name } } url state { name } children { nodes { identifier title assignee { name } state { name } team { name } } } } } }"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "linear-active",
+      "name": "Fetch Active Issues",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.1,
+      "position": [220, 100],
+      "credentials": {
+        "httpHeaderAuth": {
+          "id": "LINEAR_API_KEY",
+          "name": "Linear API"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "// Process Linear data and format for dashboard\nconst completed = $('Fetch Completed Issues').first().json.data.issues.nodes;\nconst active = $('Fetch Active Issues').first().json.data.issues.nodes;\n\nconst now = new Date().toISOString();\n\n// Helper to format issue\nfunction formatIssue(issue) {\n  return {\n    id: issue.identifier,\n    title: issue.title,\n    assignee: issue.assignee?.name || 'Unassigned',\n    labels: issue.labels?.nodes?.map(l => l.name) || [],\n    url: issue.url,\n    priority: getPriority(issue.priority),\n    dueDate: issue.dueDate,\n    description: issue.description?.substring(0, 200),\n    subIssues: issue.children?.nodes?.map(child => ({\n      id: child.identifier,\n      title: child.title,\n      assignee: child.assignee?.name,\n      status: child.state?.name,\n      team: child.team?.name\n    })) || []\n  };\n}\n\nfunction getPriority(p) {\n  const map = { 1: 'Urgent', 2: 'High', 3: 'Medium', 4: 'Low' };\n  return map[p] || null;\n}\n\n// Group active issues by status\nconst readyForRelease = active.filter(i => i.state?.name === 'Ready for Release').map(formatIssue);\nconst readyForQA = active.filter(i => i.state?.name === 'Ready for QA').map(formatIssue);\nconst inDevelopment = active.filter(i => i.state?.name === 'In Development').map(formatIssue);\nconst readyForDev = active.filter(i => i.state?.name === 'Ready for Development').map(formatIssue);\n\n// Build dashboard data\nconst dashboardData = {\n  generatedAt: now,\n  summary: {\n    completed24h: completed.length,\n    readyForRelease: readyForRelease.length,\n    readyForQA: readyForQA.length,\n    inDevelopment: inDevelopment.length,\n    readyForDev: readyForDev.length,\n    blockers: 0\n  },\n  completed: completed.map(formatIssue),\n  readyForRelease,\n  readyForQA,\n  readyForDev,\n  inDevelopment,\n  actionItems: generateActionItems(readyForRelease, inDevelopment)\n};\n\nfunction generateActionItems(release, dev) {\n  const items = [];\n  \n  // Items ready for release\n  release.forEach(i => {\n    items.push({ priority: 'critical', item: i.id, action: 'Ready for release — push to prod' });\n  });\n  \n  // Overdue items\n  dev.filter(i => i.dueDate && new Date(i.dueDate) < new Date()).forEach(i => {\n    items.push({ priority: 'warning', item: i.id, action: `Overdue since ${i.dueDate}` });\n  });\n  \n  // Due today\n  const today = new Date().toISOString().split('T')[0];\n  dev.filter(i => i.dueDate === today).forEach(i => {\n    items.push({ priority: 'critical', item: i.id, action: 'Due today' });\n  });\n  \n  return items;\n}\n\nreturn { json: dashboardData };"
+      },
+      "id": "process-data",
+      "name": "Process & Format Data",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [460, 0]
+    },
+    {
+      "parameters": {
+        "owner": "YOUR_GITHUB_ORG",
+        "repository": "eng-dashboard",
+        "filePath": "public/data.json",
+        "commitMessage": "=`Daily report update - ${new Date().toISOString().split('T')[0]}`",
+        "fileContent": "={{ JSON.stringify($json, null, 2) }}",
+        "operation": "edit"
+      },
+      "id": "github-commit",
+      "name": "Commit to GitHub",
+      "type": "n8n-nodes-base.github",
+      "typeVersion": 1,
+      "position": [680, -50],
+      "credentials": {
+        "githubApi": {
+          "id": "GITHUB_CREDENTIALS",
+          "name": "GitHub"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "channel": "#eng-daily-report",
+        "text": "=🚀 *ENG Daily Report* — {{ $now.format('DD MMM YYYY') }}\n\n✅ *Completed:* {{ $json.summary.completed24h }} | 🚀 *Release:* {{ $json.summary.readyForRelease }} | 🧪 *QA:* {{ $json.summary.readyForQA }} | 🔨 *Dev:* {{ $json.summary.inDevelopment }}\n\n{{ $json.actionItems.length > 0 ? '*Action Items:*\\n' + $json.actionItems.slice(0,5).map(i => (i.priority === 'critical' ? '🔴' : '🟡') + ' ' + i.item + ' — ' + i.action).join('\\n') : 'No urgent action items' }}\n\n<https://eng-dashboard.vercel.app|View Full Report>",
+        "otherOptions": {}
+      },
+      "id": "slack-notify",
+      "name": "Send Slack Summary",
+      "type": "n8n-nodes-base.slack",
+      "typeVersion": 2.1,
+      "position": [680, 100],
+      "credentials": {
+        "slackApi": {
+          "id": "SLACK_CREDENTIALS",
+          "name": "Slack"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Daily 8AM IST": {
+      "main": [
+        [
+          { "node": "Fetch Completed Issues", "type": "main", "index": 0 },
+          { "node": "Fetch Active Issues", "type": "main", "index": 0 }
+        ]
+      ]
+    },
+    "Fetch Completed Issues": {
+      "main": [
+        [{ "node": "Process & Format Data", "type": "main", "index": 0 }]
+      ]
+    },
+    "Fetch Active Issues": {
+      "main": [
+        [{ "node": "Process & Format Data", "type": "main", "index": 0 }]
+      ]
+    },
+    "Process & Format Data": {
+      "main": [
+        [
+          { "node": "Commit to GitHub", "type": "main", "index": 0 },
+          { "node": "Send Slack Summary", "type": "main", "index": 0 }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "timezone": "Asia/Kolkata"
+  }
+}
