@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-01-21T09:22:47.014Z",
+  "generatedAt": "2026-01-22T02:30:51.493Z",
   "summary": {
     "completed24h": 6,
     "readyForRelease": 1,
-    "readyForQA": 1,
+    "readyForQA": 2,
     "inDevelopment": 11,
     "readyForDev": 51,
     "blockers": 0
@@ -20,6 +20,20 @@
         "severity-p0"
       ],
       "url": "https://linear.app/orocorp/issue/ENG-660/loan-id-omgl10629484-or-tpf-payment-status",
+      "priority": null,
+      "subIssues": []
+    },
+    {
+      "id": "ENG-659",
+      "title": "Loan ID: OMGL10636359 | TPF Payment status",
+      "assignee": "adityasinh.jc@orocorp.in",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-659/loan-id-omgl10636359-or-tpf-payment-status",
       "priority": null,
       "subIssues": []
     },
@@ -48,20 +62,6 @@
         "severity-p0"
       ],
       "url": "https://linear.app/orocorp/issue/ENG-654/loan-id-omgl10769044-or-pl-split-is-not-getting-reflected",
-      "priority": null,
-      "subIssues": []
-    },
-    {
-      "id": "ENG-653",
-      "title": "Loan ID: OMGL50751277 | Payment status wrong",
-      "assignee": "harsh.m@orocorp.in",
-      "labels": [
-        "bug",
-        "hotfix",
-        "manual-fix",
-        "severity-p0"
-      ],
-      "url": "https://linear.app/orocorp/issue/ENG-653/loan-id-omgl50751277-or-payment-status-wrong",
       "priority": null,
       "subIssues": []
     },
@@ -114,21 +114,51 @@
   ],
   "readyForQA": [
     {
-      "id": "ENG-656",
-      "title": "Cx app profile update & Localisation",
+      "id": "ENG-664",
+      "title": "[P0] 'Choose Plan and Get Funds' button is not working as expected in other languages - Cx App",
       "assignee": "Aniket Singh",
       "labels": [
-        "mobile",
-        "this-week"
+        "bug",
+        "mobile"
       ],
-      "url": "https://linear.app/orocorp/issue/ENG-656/cx-app-profile-update-and-localisation",
+      "url": "https://linear.app/orocorp/issue/ENG-664/p0-choose-plan-and-get-funds-button-is-not-working-as-expected-in",
       "priority": null,
       "dueDate": null,
-      "description": "Figma link: [https://www.figma.com/design/wuDQvt5JFY2HrVWJfjxDpP/Jan-Feb-2026?node-id=1467-41238&t=vIhIdTqWwcy90vuS-11](<https://www.figma.com/design/wuDQvt5JFY2HrVWJfjxDpP/Jan-Feb-2026?node-id=1467-4",
+      "description": "## **Summary**\n\n'Choose Plan and Get Funds'  button is not working as expected in other languages - Cx App\n\n## **Steps To Reproduce**\n\n* Start visit\n* Proceed till Plan selection step\n* Click Choose P",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-663",
+      "title": "[P1] 'Touch ID / Face ID' should be displayed instead of 'Use Face ID/ Touch ID' in Profile screen- Cx App",
+      "assignee": "Aniket Singh",
+      "labels": [
+        "bug",
+        "mobile"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-663/p1-touch-id-face-id-should-be-displayed-instead-of-use-face-id-touch",
+      "priority": null,
+      "dueDate": null,
+      "description": "## **Summary**\n\n'Touch ID / Face ID' should be displayed instead of 'Use Face ID/ Touch ID' in Profile screen\n\n## **Steps To Reproduce**\n\n* Log in to Cx app\n* Click Side hamburger menu\n* Click 'My Pro",
       "subIssues": []
     }
   ],
   "readyForDev": [
+    {
+      "id": "ENG-662",
+      "title": "Loan ID: OMBL20985745 | BRL_GL_COL missing",
+      "assignee": "Shubham B",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-662/loan-id-ombl20985745-or-brl-gl-col-missing",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMBL20985745\n\nWhat is the issue:\n\nLoan amount: Rs 19,87,000\nPending interest: 0\nClosure: 0\nBL GL Collection has been received but not reflected in BL Ledger. Update the ledger and move this l",
+      "subIssues": []
+    },
     {
       "id": "ENG-661",
       "title": "Loan ID: OMGL10601832 | Auto Renewal Reject case",
@@ -143,22 +173,6 @@
       "priority": null,
       "dueDate": null,
       "description": "Loan ID: OMGL10601832\n\nWhat is the issue:\nAuto renewal case rejected by bank. We need to move this loan back to GL and PL active status and update ledger and closure so that cx can proceed with auto r",
-      "subIssues": []
-    },
-    {
-      "id": "ENG-659",
-      "title": "Loan ID: OMGL10636359 | TPF Payment status",
-      "assignee": "adityasinh.jc@orocorp.in",
-      "labels": [
-        "bug",
-        "hotfix",
-        "manual-fix",
-        "severity-p0"
-      ],
-      "url": "https://linear.app/orocorp/issue/ENG-659/loan-id-omgl10636359-or-tpf-payment-status",
-      "priority": null,
-      "dueDate": null,
-      "description": "Loan ID: OMGL10636359\n\nWhat is the issue:\n\n(TPF)\nLoan amount: rs 1,46,223\nPending interest: 434\nClosure: rs 1,46,650\nCx made payment rs 11280 on 14 Jan  which was received but reflecting as failed on ",
       "subIssues": []
     },
     {
@@ -1177,11 +1191,6 @@
       "priority": "warning",
       "item": "ENG-105",
       "action": "Overdue since 2025-12-27"
-    },
-    {
-      "priority": "critical",
-      "item": "ENG-161",
-      "action": "Due today"
     }
   ]
 }
