@@ -1,100 +1,14 @@
 {
-  "generatedAt": "2026-01-22T02:30:51.493Z",
+  "generatedAt": "2026-01-23T02:30:51.759Z",
   "summary": {
-    "completed24h": 6,
-    "readyForRelease": 1,
+    "completed24h": 1,
+    "readyForRelease": 0,
     "readyForQA": 2,
-    "inDevelopment": 11,
-    "readyForDev": 51,
+    "inDevelopment": 10,
+    "readyForDev": 56,
     "blockers": 0
   },
   "completed": [
-    {
-      "id": "ENG-660",
-      "title": "Loan ID: OMGL10629484 | TPF Payment status",
-      "assignee": "adityasinh.jc@orocorp.in",
-      "labels": [
-        "bug",
-        "hotfix",
-        "manual-fix",
-        "severity-p0"
-      ],
-      "url": "https://linear.app/orocorp/issue/ENG-660/loan-id-omgl10629484-or-tpf-payment-status",
-      "priority": null,
-      "subIssues": []
-    },
-    {
-      "id": "ENG-659",
-      "title": "Loan ID: OMGL10636359 | TPF Payment status",
-      "assignee": "adityasinh.jc@orocorp.in",
-      "labels": [
-        "bug",
-        "hotfix",
-        "manual-fix",
-        "severity-p0"
-      ],
-      "url": "https://linear.app/orocorp/issue/ENG-659/loan-id-omgl10636359-or-tpf-payment-status",
-      "priority": null,
-      "subIssues": []
-    },
-    {
-      "id": "ENG-658",
-      "title": "Loan ID: OMGL50668979 | Update Fed closure value",
-      "assignee": "Shubham B",
-      "labels": [
-        "bug",
-        "hotfix",
-        "manual-fix",
-        "severity-p0"
-      ],
-      "url": "https://linear.app/orocorp/issue/ENG-658/loan-id-omgl50668979-or-update-fed-closure-value",
-      "priority": null,
-      "subIssues": []
-    },
-    {
-      "id": "ENG-654",
-      "title": "Loan ID: OMGL10769044 | PL Split is not getting reflected",
-      "assignee": "harsh.m@orocorp.in",
-      "labels": [
-        "bug",
-        "hotfix",
-        "manual-fix",
-        "severity-p0"
-      ],
-      "url": "https://linear.app/orocorp/issue/ENG-654/loan-id-omgl10769044-or-pl-split-is-not-getting-reflected",
-      "priority": null,
-      "subIssues": []
-    },
-    {
-      "id": "ENG-652",
-      "title": "Loan ID: OMGL10698023 | TPF Ledger adjustment",
-      "assignee": "harsh.m@orocorp.in",
-      "labels": [
-        "bug",
-        "hotfix",
-        "manual-fix",
-        "severity-p0"
-      ],
-      "url": "https://linear.app/orocorp/issue/ENG-652/loan-id-omgl10698023-or-tpf-ledger-adjustment",
-      "priority": null,
-      "subIssues": []
-    },
-    {
-      "id": "ENG-624",
-      "title": "Loan ID: OMBL90960439 | BRL_GL_COL entry missing",
-      "assignee": "harsh.m@orocorp.in",
-      "labels": [
-        "bug",
-        "hotfix",
-        "manual-fix",
-        "severity-p0"
-      ],
-      "url": "https://linear.app/orocorp/issue/ENG-624/loan-id-ombl90960439-or-brl-gl-col-entry-missing",
-      "priority": null,
-      "subIssues": []
-    }
-  ],
-  "readyForRelease": [
     {
       "id": "ENG-619",
       "title": "P1 | Duplicate Release Visit Created",
@@ -106,12 +20,11 @@
         "severity-p0"
       ],
       "url": "https://linear.app/orocorp/issue/ENG-619/p1-or-duplicate-release-visit-created",
-      "priority": "Medium",
-      "dueDate": "2026-01-20",
-      "description": "**Issue**\nMultiple concurrent requests were processed simultaneously by the system, which resulted in duplicate entries being created in the database.\n\n**Root Cause**\nThe `visits` table does not have ",
+      "priority": null,
       "subIssues": []
     }
   ],
+  "readyForRelease": [],
   "readyForQA": [
     {
       "id": "ENG-664",
@@ -143,6 +56,64 @@
     }
   ],
   "readyForDev": [
+    {
+      "id": "ENG-670",
+      "title": "RBAC Revamp / Create New Role / Admin - Walk-In and Closure Request icons are swapped.",
+      "assignee": "shrey.p@orocorp.in",
+      "labels": [
+        "bug"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-670/rbac-revamp-create-new-role-admin-walk-in-and-closure-request-icons",
+      "priority": "High",
+      "dueDate": null,
+      "description": "**Summary    :**\nAdmin - Walk-In and Closure Request icons are swapped.\n\n**Steps To Reproduce**\n\n* Navigate to RBAC -> Croles\n* Click on 'Create New Role' and click Admin\n* Check Walk in and closure R",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-669",
+      "title": "RBAC Revamp / Create New Role / System displays the description and cluster access instead of the Role description and Cluster",
+      "assignee": "shrey.p@orocorp.in",
+      "labels": [
+        "bug"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-669/rbac-revamp-create-new-role-system-displays-the-description-and",
+      "priority": "High",
+      "dueDate": null,
+      "description": "**Summary**\n\nIn the Role Details section, the system displays the description and cluster access instead of the Role Description and Cluster\n\n**Steps To Reproduce**\n\n* Navigate to RBAC -> Croles\n* Cli",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-668",
+      "title": "Loan ID: OMBL20979652 | BRL_GL_COL enty missing",
+      "assignee": "Shubham B",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-668/loan-id-ombl20979652-or-brl-gl-col-enty-missing",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID: OMBL20979652\n\nWhat is the issue:\n\nTakeover Loan: OMGL20988789\nBoth GL and PL both received towards BRL but GL Collection entry not created in BRL Payment Ledger.\nThe same is occurring in all ",
+      "subIssues": []
+    },
+    {
+      "id": "ENG-667",
+      "title": "P0 | Loan status is not getting updated to closed",
+      "assignee": "harsh.m@orocorp.in",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-667/p0-or-loan-status-is-not-getting-updated-to-closed",
+      "priority": null,
+      "dueDate": null,
+      "description": "Loan ID:\n\nWhat is the issue: Loan status is not getting updated to closed\n\nSlack Link: [https://oro-work.slack.com/archives/C036NPDTGGN/p1769067640337739](<https://oro-work.slack.com/archives/C036NPDT",
+      "subIssues": []
+    },
     {
       "id": "ENG-662",
       "title": "Loan ID: OMBL20985745 | BRL_GL_COL missing",
@@ -754,6 +725,23 @@
       "subIssues": []
     },
     {
+      "id": "ENG-161",
+      "title": "P1 - Appointment Details Not Updated for Lead in DB",
+      "assignee": "Girish Baranda",
+      "labels": [
+        "bug",
+        "severity-p1",
+        "hotfix",
+        "quick_release_2",
+        "unplanned"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-161/p1-appointment-details-not-updated-for-lead-in-db",
+      "priority": "High",
+      "dueDate": "2026-01-21",
+      "description": "## **Incident Link**\n\n* We have noticed an issue where the appointments booked by callers in the **Quali** are not being updated in **Metabase**.\n* Appointment details not getting updated in appointme",
+      "subIssues": []
+    },
+    {
       "id": "ENG-153",
       "title": "Loan ID: TCGL30780373 | while customer creation 'Column 'nan' doesn't exit error is thrown",
       "assignee": "vagheshkumar.sp@orocorp.in",
@@ -1076,11 +1064,11 @@
       "description": "Labels:\n`feature, backend|web|mobile|infra + optional city-[name], release-blocker, hotfix`\n\n## **Context**\n\n* Problem & business outcome: The Automated Gold Vault System (AGVS) is Oro’s proprietary v",
       "subIssues": [
         {
-          "id": "ENG-388",
+          "id": "BAC-4961",
           "title": "AGVS BACKEND",
           "assignee": "Girish Baranda",
           "status": "Done",
-          "team": "Engineering"
+          "team": "Backend"
         },
         {
           "id": "MOB-2941",
@@ -1139,23 +1127,6 @@
       ]
     },
     {
-      "id": "ENG-161",
-      "title": "P1 - Appointment Details Not Updated for Lead in DB",
-      "assignee": "Girish Baranda",
-      "labels": [
-        "bug",
-        "severity-p1",
-        "hotfix",
-        "quick_release_2",
-        "unplanned"
-      ],
-      "url": "https://linear.app/orocorp/issue/ENG-161/p1-appointment-details-not-updated-for-lead-in-db",
-      "priority": "High",
-      "dueDate": "2026-01-21",
-      "description": "## **Incident Link**\n\n* We have noticed an issue where the appointments booked by callers in the **Quali** are not being updated in **Metabase**.\n* Appointment details not getting updated in appointme",
-      "subIssues": []
-    },
-    {
       "id": "ENG-105",
       "title": "Caratmeter API integration",
       "assignee": "Girish Baranda",
@@ -1173,19 +1144,9 @@
   ],
   "actionItems": [
     {
-      "priority": "critical",
-      "item": "ENG-619",
-      "action": "Ready for release — push to prod"
-    },
-    {
       "priority": "warning",
       "item": "ENG-339",
       "action": "Overdue since 2025-12-27"
-    },
-    {
-      "priority": "warning",
-      "item": "ENG-161",
-      "action": "Overdue since 2026-01-21"
     },
     {
       "priority": "warning",
