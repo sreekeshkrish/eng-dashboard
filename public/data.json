@@ -1,25 +1,53 @@
 {
-  "generatedAt": "2026-01-23T02:30:51.759Z",
+  "generatedAt": "2026-01-24T02:30:51.409Z",
   "summary": {
-    "completed24h": 1,
+    "completed24h": 3,
     "readyForRelease": 0,
     "readyForQA": 2,
     "inDevelopment": 10,
-    "readyForDev": 56,
+    "readyForDev": 53,
     "blockers": 0
   },
   "completed": [
     {
-      "id": "ENG-619",
-      "title": "P1 | Duplicate Release Visit Created",
-      "assignee": "kushal.ps@orocorp.in",
+      "id": "ENG-662",
+      "title": "Loan ID: OMBL20985745 | BRL_GL_COL missing",
+      "assignee": "harsh.m@orocorp.in",
       "labels": [
         "bug",
         "hotfix",
         "manual-fix",
         "severity-p0"
       ],
-      "url": "https://linear.app/orocorp/issue/ENG-619/p1-or-duplicate-release-visit-created",
+      "url": "https://linear.app/orocorp/issue/ENG-662/loan-id-ombl20985745-or-brl-gl-col-missing",
+      "priority": null,
+      "subIssues": []
+    },
+    {
+      "id": "ENG-661",
+      "title": "Loan ID: OMGL10601832 | Auto Renewal Reject case",
+      "assignee": "Shubham B",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-661/loan-id-omgl10601832-or-auto-renewal-reject-case",
+      "priority": null,
+      "subIssues": []
+    },
+    {
+      "id": "ENG-657",
+      "title": "P0 | Add 'Business' as option in Loan Purpose enum",
+      "assignee": "Girish Baranda",
+      "labels": [
+        "bug",
+        "hotfix",
+        "manual-fix",
+        "severity-p0"
+      ],
+      "url": "https://linear.app/orocorp/issue/ENG-657/p0-or-add-business-as-option-in-loan-purpose-enum",
       "priority": null,
       "subIssues": []
     }
@@ -112,54 +140,6 @@
       "priority": null,
       "dueDate": null,
       "description": "Loan ID:\n\nWhat is the issue: Loan status is not getting updated to closed\n\nSlack Link: [https://oro-work.slack.com/archives/C036NPDTGGN/p1769067640337739](<https://oro-work.slack.com/archives/C036NPDT",
-      "subIssues": []
-    },
-    {
-      "id": "ENG-662",
-      "title": "Loan ID: OMBL20985745 | BRL_GL_COL missing",
-      "assignee": "Shubham B",
-      "labels": [
-        "bug",
-        "hotfix",
-        "manual-fix",
-        "severity-p0"
-      ],
-      "url": "https://linear.app/orocorp/issue/ENG-662/loan-id-ombl20985745-or-brl-gl-col-missing",
-      "priority": null,
-      "dueDate": null,
-      "description": "Loan ID: OMBL20985745\n\nWhat is the issue:\n\nLoan amount: Rs 19,87,000\nPending interest: 0\nClosure: 0\nBL GL Collection has been received but not reflected in BL Ledger. Update the ledger and move this l",
-      "subIssues": []
-    },
-    {
-      "id": "ENG-661",
-      "title": "Loan ID: OMGL10601832 | Auto Renewal Reject case",
-      "assignee": "Shubham B",
-      "labels": [
-        "bug",
-        "hotfix",
-        "manual-fix",
-        "severity-p0"
-      ],
-      "url": "https://linear.app/orocorp/issue/ENG-661/loan-id-omgl10601832-or-auto-renewal-reject-case",
-      "priority": null,
-      "dueDate": null,
-      "description": "Loan ID: OMGL10601832\n\nWhat is the issue:\nAuto renewal case rejected by bank. We need to move this loan back to GL and PL active status and update ledger and closure so that cx can proceed with auto r",
-      "subIssues": []
-    },
-    {
-      "id": "ENG-657",
-      "title": "P0 | Add 'Business' as option in Loan Purpose enum",
-      "assignee": "Girish Baranda",
-      "labels": [
-        "bug",
-        "hotfix",
-        "manual-fix",
-        "severity-p0"
-      ],
-      "url": "https://linear.app/orocorp/issue/ENG-657/p0-or-add-business-as-option-in-loan-purpose-enum",
-      "priority": null,
-      "dueDate": null,
-      "description": "What is the issue: Add 'Business' as option in Loan Purpose enum\n\nWhat was the fix done:",
       "subIssues": []
     },
     {
@@ -1137,7 +1117,7 @@
       ],
       "url": "https://linear.app/orocorp/issue/ENG-105/caratmeter-api-integration",
       "priority": "High",
-      "dueDate": "2025-12-27",
+      "dueDate": "2026-02-27",
       "description": "@girish.b added ticket here",
       "subIssues": []
     }
@@ -1150,8 +1130,13 @@
     },
     {
       "priority": "warning",
-      "item": "ENG-105",
-      "action": "Overdue since 2025-12-27"
+      "item": "ENG-338",
+      "action": "Overdue since 2026-01-24"
+    },
+    {
+      "priority": "critical",
+      "item": "ENG-338",
+      "action": "Due today"
     }
   ]
 }
