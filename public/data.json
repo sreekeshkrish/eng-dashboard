@@ -1,57 +1,14 @@
 {
-  "generatedAt": "2026-01-24T02:30:51.409Z",
+  "generatedAt": "2026-01-25T02:30:51.394Z",
   "summary": {
-    "completed24h": 3,
+    "completed24h": 0,
     "readyForRelease": 0,
     "readyForQA": 2,
     "inDevelopment": 10,
     "readyForDev": 53,
     "blockers": 0
   },
-  "completed": [
-    {
-      "id": "ENG-662",
-      "title": "Loan ID: OMBL20985745 | BRL_GL_COL missing",
-      "assignee": "harsh.m@orocorp.in",
-      "labels": [
-        "bug",
-        "hotfix",
-        "manual-fix",
-        "severity-p0"
-      ],
-      "url": "https://linear.app/orocorp/issue/ENG-662/loan-id-ombl20985745-or-brl-gl-col-missing",
-      "priority": null,
-      "subIssues": []
-    },
-    {
-      "id": "ENG-661",
-      "title": "Loan ID: OMGL10601832 | Auto Renewal Reject case",
-      "assignee": "Shubham B",
-      "labels": [
-        "bug",
-        "hotfix",
-        "manual-fix",
-        "severity-p0"
-      ],
-      "url": "https://linear.app/orocorp/issue/ENG-661/loan-id-omgl10601832-or-auto-renewal-reject-case",
-      "priority": null,
-      "subIssues": []
-    },
-    {
-      "id": "ENG-657",
-      "title": "P0 | Add 'Business' as option in Loan Purpose enum",
-      "assignee": "Girish Baranda",
-      "labels": [
-        "bug",
-        "hotfix",
-        "manual-fix",
-        "severity-p0"
-      ],
-      "url": "https://linear.app/orocorp/issue/ENG-657/p0-or-add-business-as-option-in-loan-purpose-enum",
-      "priority": null,
-      "subIssues": []
-    }
-  ],
+  "completed": [],
   "readyForRelease": [],
   "readyForQA": [
     {
@@ -1132,11 +1089,6 @@
       "priority": "warning",
       "item": "ENG-338",
       "action": "Overdue since 2026-01-24"
-    },
-    {
-      "priority": "critical",
-      "item": "ENG-338",
-      "action": "Due today"
     }
   ]
 }
